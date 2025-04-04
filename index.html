@@ -7,107 +7,255 @@
 	<meta content="country" name="Vietnam">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/style.css">
-	<title>Nguyen Loc Resume</title>
+	<title>Quoc Loc Nguyen - Portfolio</title>
 </head>
 <body>
-	<h1 id="menu_text">My Resume</h1>
-	<nav>
-		<a href="#contact" class="menu_left">Contact</a>
-		<a href="#education" class="menu_left">Education</a>
-		<a href="#score" class="menu_left">Score</a>
-		<a href="#social" class="menu_right">SocialMedia</a>
-	</nav>
-	<div id="flex_container">
-		<div id="left_side">
-			<h2 id="contact">About me</h2>
-			<img src="assets/photo.jpg" alt="My photo" width="100" height="100">
-			<p><em>I am studying in Ho Chi Minh city University of Technology</em></p>
-			<ul>
-				<li><strong>Fullname: </strong>Nguyen Loc</li>
-				<li><strong>Country: </strong>Vietnam</li>
-			</ul>
-			<h2 id="education">Education</h2>
-			<ol>
-				<li>An Luong Highschool</li>
-				<li>Ho Chi Minh city University of Technology</li>
-			</ol>
-			<h2 id="score">Scores</h2>
-			<table border="1">
-				<tr>
-					<th rowspan="2"></th>
-					<th colspan="2">Math</th>
-					<th rowspan="2">Physics</th>
-					<th rowspan="2">IT</th>
-				</tr>
-				<tr>
-					<th>Math 1</th>
-					<th>Math 2</th>
-				</tr>
-				<tr>
-					<th>2022</th>
-					<td>1</td>
-					<td>2</td>
-					<td>3</td>
-					<td>4</td>
-				</tr>
-				<tr>
-					<th>2023</th>
-					<td>5</td>
-					<td>6</td>
-					<td>7</td>
-					<td>8</td>
-				</tr>
-				<tr>
-					<th>2024</th>
-					<td>9</td>
-					<td>10</td>
-					<td>8</td>
-					<td>7</td>
-				</tr>
-			</table>
-			<h2 id="social">Social Media</h2>
-			<p>Youtube: <a href="https://www.youtube.com/@quoclocnguyen">グエン クォック ロック</a></p>
-			<p>Facebook: <a href="https://www.facebook.com/profile.php?id=100021456370895">Nguyen Loc </a></p>
-		</div>
-		<div id="right_side">
-			<h2 id="course">Online Course</h2>
-			<div id="course_container">
-				<div class="course_item">
-					<img class="course_img" src="assets/math.jpg"/>
-					<div class="course_title">Logic Math</div>
-					<div class="course_desc">Toán tư duy cơ bản, xây dựng nền tảng cho việc học kĩ thuật và lập trình bậc đại học</div>
-				</div>
-				<div class="course_item">
-					<img class="course_img" src="assets/web.jpg"/>
-					<div class="course_title">Web Basic</div>
-					<div class="course_desc">Lập trình website cho người mới bắt đầu, xây dựng website cá nhân và hệ thống backend theo ý muốn</div>
-				</div>
-				<div class="course_item">
-					<img class="course_img" src="assets/python.jpg"/>
-					<div class="course_title">Python Basic</div>
-					<div class="course_desc">Lập trình python cơ bản đến nâng cao cho người mới, nắm vững kĩ thuật lập trình căn bản</div>
-				</div>
-				<div class="course_item">
-					<img class="course_img" src="assets/game.jpg"/>
-					<div class="course_title">Game Python</div>
-					<div class="course_desc">Lập trình Game rắn săn mồi, đồng hồ đếm ngược là flappy bird bằng thư viện đồ họa pygame</div>
-				</div>
-				<div class="course_item">
-					<img class="course_img" src="assets/data.jpg"/>
-					<div class="course_title">Data Science</div>
-					<div class="course_desc">Xử dụng kĩ thuật làm sạch dữ liệu và vẽ biểu đồ bằng thư viện matplotlib để phân tích điểm thi đại học 2020</div>
-				</div>
-				<div class="course_item">
-					<img class="course_img" src="assets/ai.jpg"/>
-					<div class="course_title">AI Basic</div>
-					<div class="course_desc">Lập trình trí tuệ nhân tạo, thuật toán KNN, K-means, Regression và Gradient Descent, sử dụng toán cao cấp và ma trận cơ bản</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<footer>
-		Create by Nguyen Loc - <a href="mailto:nguyenquocloc2004@gmail.com">nguyenquocloc2004@gmail.com</a>
-	</footer>
-</body>
-</html>	
+    <header class="header">
+        <h1>Quoc Loc Nguyen</h1>
+        <p>Computer Science Student</p>
+    </header>
 
+    <nav class="nav">
+        <ul class="nav-list">
+            <li><a href="#education" class="nav-link">Education</a></li>
+            <li><a href="#skills" class="nav-link">Technical Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#certifications" class="nav-link">Certifications</a></li>
+            <li><a href="#activities" class="nav-link">Other</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <!-- Sidebar (Desktop) -->
+        <aside class="sidebar">
+            <div class="contact-info">
+            	<div class="avatar-container">
+			        <img src="assets/a.jpg" alt="Profile Photo" class="profile-avatar">
+			    </div>
+                <h2>Contact</h2>
+                <p><a href="tel:0344847927" class="icon-link">📱+84 344 84 7927</a></p>
+                <p><a href="mailto:nguyenquocloc2004@gmail.com" class="icon-link">✉️ Email</a></p>
+                <p><a href="https://github.com/Tanlocdev04" class="icon-link">💻 GitHub</a></p>
+                <p><a href="https://www.linkedin.com/in/quốc-lộc-nguyễn-084a542b5/" class="icon-link">🖥️ Linkedin</a></p>
+                <p><a href="https://www.facebook.com/nguyen.loc.735998/about" class="icon-link">🖥️ Facebook</a></p>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="main-content">
+		<!-- Education -->
+		<section id="education" class="section">
+		    <h2>Education</h2>
+		    <div class="timeline-item">
+		        <div>
+		            <h3>2022-2026</h3>
+		        </div>
+		        <div>
+		            <h4>BSc Computer Science, Japanese Enhancement Programme</h4>
+		            <p>University of Technology, VNU‑HCM</p>
+		            <div class="courses-list">
+		                <h5>Relevant Courses:</h5>
+		                <ul>
+		                    <li>Software Engineering</li>
+		                    <li>Web Programming</li>
+		                    <li>Software Engineering Capstone Project</li>
+		                </ul>
+		            </div>
+		        </div>
+		    </div>
+		</section>
+
+		<!-- Technical Skills -->
+		<section id="skills" class="section">
+		    <h2>Technical Skills</h2>
+		    <div class="skills-grid">
+		        <div class="skill-category">
+		            <h4>Languages</h4>
+		            <div class="skill-items">
+		                <span class="skill-badge">JavaScript (ES6+)</span>
+		                <span class="skill-badge">HTML5</span>
+		                <span class="skill-badge">CSS3</span>
+		                <span class="skill-badge">C++</span>
+		            </div>
+		        </div>
+
+		        <div class="skill-category">
+		            <h4>Frameworks/Libraries</h4>
+		            <div class="skill-items">
+		                <span class="skill-badge">Bootstrap</span>
+		                <span class="skill-badge">React Native</span>
+		            </div>
+		        </div>
+
+		        <div class="skill-category">
+		            <h4>Tools</h4>
+		            <div class="skill-items">
+		                <span class="skill-badge">Git</span>
+		                <span class="skill-badge">GitHub</span>
+		                <span class="skill-badge">VS Code</span>
+		                <span class="skill-badge">Figma</span>
+		                <span class="skill-badge">Android Studio</span>
+		                <span class="skill-badge">npm</span>
+		                <span class="skill-badge">LaTeX</span>
+		            </div>
+		        </div>
+
+		        <div class="skill-category">
+		            <h4>Other</h4>
+		            <div class="skill-items">
+		                <span class="skill-badge">Responsive Design</span>
+		                <span class="skill-badge">REST APIs</span>
+		                <span class="skill-badge">Agile Development</span>
+		            </div>
+		        </div>
+		    </div>
+		</section>
+
+            <!-- Projects -->
+			<section id="projects" class="section">
+			    <h2>Projects</h2>
+			    <div class="project-grid">
+			        <!-- Academic Management System -->
+			        <article class="project-card">
+			            <div class="project-header">
+			                <h3>Academic Management System - HCMUT</h3>
+			                <div class="project-date">03/2024 - 05/2024</div>
+			            </div>
+			            <div class="badge">HTML • CSS • Bootstrap • Git • Python</div>
+			            <ul class="project-details">
+			                <li>Developed comprehensive UI including homepage with navigation bar, background, and footer</li>
+			                <li>Implemented student/instructor management features</li>
+			                <li>Enhanced skills in responsive design and Git workflow</li>
+			            </ul>
+			            <a href="https://github.com/QuocThinh73/Academic_management_web_app.git" class="icon-link">
+			                View on GitHub →
+			            </a>
+			        </article>
+
+			        <!-- Smart Printing Service -->
+			        <article class="project-card">
+			            <div class="project-header">
+			                <h3>Smart Printing Service System - HCMUT</h3>
+			                <div class="project-date">08/2024 - 12/2024</div>
+			            </div>
+			            <div class="badge">MongoDB • Node.js • REST API • Agile</div>
+			            <ul class="project-details">
+			                <li>Designed main UI framework and authentication system</li>
+			                <li>Integrated MongoDB database and third-party APIs</li>
+			                <li>Implemented Waterfall and Agile methodologies</li>
+			            </ul>
+			            <a href="https://github.com/MinaNguyen17/BTL-CNPM.git" class="icon-link">
+			                View on GitHub →
+			            </a>
+			        </article>
+
+			        <!-- Soccer Field Booking -->
+			        <article class="project-card">
+			            <div class="project-header">
+			                <h3>Online Soccer Field Booking Platform</h3>
+			                <div class="project-date">08/2024 - 01/2025</div>
+			            </div>
+			            <div class="badge">Full-stack • Team Leadership • Video Editing</div>
+			            <ul class="project-details">
+			                <li>Led development team and designed module architecture</li>
+			                <li>Implemented full-cycle development from UI to deployment</li>
+			                <li>Created professional demo videos for project reports</li>
+			            </ul>
+			            <a href="https://github.com/diepvuminh123/Soccer-field-booking-application.git" class="icon-link">
+			                View on GitHub →
+			            </a>
+			        </article>
+			    </div>
+			</section>
+
+			<!-- Certifications -->
+			<section id="certifications" class="section">
+			    <h2>Certifications</h2>
+			    
+			    <!-- JLPT N3 -->
+			    <div class="certification-item">
+			        <div class="certification-header">
+			            <h3>JLPT N3</h3>
+			            <a href="https://drive.google.com/file/d/1bFTpTmH95CbmTktZCcqPDOmtAJRFHeyy/view?usp=sharing" 
+			               class="verify-link"
+			               target="_blank">
+			               Verify ↗
+			            </a>
+			        </div>
+			    </div>
+
+			    <!-- Advanced C++ -->
+			    <div class="certification-item">
+			        <div class="certification-header">
+			            <h3>Advanced C++</h3>
+			            <a href="https://codelearn.io/share/f7b816b0-413a-4ee8-998d-1b6594444e1b" 
+			               class="verify-link"
+			               target="_blank">
+			               Verify ↗
+			            </a>
+			        </div>
+			    </div>
+
+			    <!-- OOP in C++ -->
+			    <div class="certification-item">
+			        <div class="certification-header">
+			            <h3>Object Oriented-Programming in C++</h3>
+			            <a href="https://codelearn.io/en/share/a74d45a3-b938-4c71-b3fb-610cc8989383" 
+			               class="verify-link"
+			               target="_blank">
+			               Verify ↗
+			            </a>
+			        </div>
+			    </div>
+			</section>
+
+			<!-- Activities & Interests -->
+            <section id="activities" class="section">
+			    <h2>Activities & Interests</h2>
+			    
+			    <!-- Volunteer Activities -->
+			    <div class="timeline-item">
+			        <div>2023</div>
+			        <div>
+			            <h3>Volunteer Activities</h3>
+			            <div class="project-links">
+			                <a href="https://www.facebook.com/DoankhoiOISP/posts/pfbid0hfM3NG1VzvEveBpjdJ3BG3TTtK7LsTbSUKNySypHxmP8FBvaZyhoxwwF6hGHLaPSl" class="icon-link">Facebook Post</a>
+			                <a href="https://www.baodongthap.vn/xa-hoi/net-dep-“mua-he-xanh”-115384.aspx" class="icon-link">News Article</a>
+			            </div>
+			            <ul>
+			                <li>Green Summer Campaign Volunteer - OISP in Tan Hong, Dong Thap (06/2023 - 07/2023)</li>
+			                <li>"Run for the Community" Volunteer - Ho Chi Minh City University of Technology</li>
+			            </ul>
+			        </div>
+			    </div>
+
+			    <!-- Sports & Fitness -->
+			    <div class="timeline-item">
+			        <div>2022-Present</div>
+			        <div>
+			            <h3>Sports & Fitness</h3>
+			            <ul>
+			                <li>Aikido: Achieved Kyu 4 rank</li>
+			            </ul>
+			        </div>
+			    </div>
+
+			    <!-- Creative Skills -->
+			    <div class="timeline-item">
+			        <div>2023</div>
+			        <div>
+			            <h3>Creative Skills</h3>
+			            <div class="project-links">
+			                <a href="https://youtu.be/OskDh3xgolU" class="icon-link">Personal Project</a>
+			                <a href="https://youtu.be/e3cbalBvmrE" class="icon-link">Group Project</a>
+			            </div>
+			            <ul>
+			                <li>Video Editing: Engaged in personal projects and content creation</li>
+			            </ul>
+			        </div>
+			    </div>
+			</section>
+        </div>
+    </main>
+</body>
+</html>
