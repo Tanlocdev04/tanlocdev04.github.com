@@ -11,17 +11,24 @@
 </head>
 <body>
     <header class="header">
-        <h1>Quoc Loc Nguyen</h1>
-        <p>Computer Science Student</p>
+        <h1 data-translate="fullName">Quoc Loc Nguyen</h1>
+        <p data-translate="computerScienceStudent">Computer Science Student</p>
     </header>
 
     <nav class="nav">
         <ul class="nav-list">
-            <li><a href="#education" class="nav-link">Education</a></li>
-            <li><a href="#skills" class="nav-link">Technical Skills</a></li>
-            <li><a href="#projects" class="nav-link">Projects</a></li>
-            <li><a href="#certifications" class="nav-link">Certifications</a></li>
-            <li><a href="#activities" class="nav-link">Other</a></li>
+            <li><a href="#education" class="nav-link" data-translate="education">Education</a></li>
+            <li><a href="#skills" class="nav-link" data-translate="technicalSkills">Technical Skills</a></li>
+            <li><a href="#projects" class="nav-link" data-translate="projects">Projects</a></li>
+            <li><a href="#certifications" class="nav-link" data-translate="certifications">Certifications</a></li>
+            <li><a href="#activities" class="nav-link" data-translate="other">Other</a></li>
+            <li>
+	            <select id="language-select" class="lang-switcher">
+	                <option value="en">🇺🇸 English</option>
+	                <option value="vi">🇻🇳 Tiếng Việt</option>
+	                <option value="ja">🇯🇵 日本語</option>
+	            </select>
+       		</li>	
         </ul>
     </nav>
 
@@ -32,7 +39,7 @@
             	<div class="avatar-container">
 			        <img src="assets/a.jpg" alt="Profile Photo" class="profile-avatar">
 			    </div>
-                <h2>Contact</h2>
+                <h2 data-translate="contact">Contact</h2>
                 <p><a href="tel:0344847927" class="icon-link">📱+84 344 84 7927</a></p>
                 <p><a href="mailto:nguyenquocloc2004@gmail.com" class="icon-link">✉️ Email</a></p>
                 <p><a href="https://github.com/Tanlocdev04" class="icon-link">💻 GitHub</a></p>
@@ -45,26 +52,26 @@
         <div class="main-content">
         <!-- Summary -->	 
         <section id="summary" class="section">
-		    <h2>Summary</h2>
-		    <p>Third-year Computer Science student with hands-on experience in Frontend development across multiple real-world projects. Possesses in-depth knowledge of HTML, CSS, JavaScript, and modern frameworks. Aiming to become a professional Frontend Developer with expertise in building intuitive, responsive, and performance-optimized user interfaces.</p>
+		    <h2 data-translate="summary">Summary</h2>
+		    <p data-translate="textSummary">Third-year Computer Science student with hands-on experience in Frontend development across multiple real-world projects. Possesses in-depth knowledge of HTML, CSS, JavaScript, and modern frameworks. Aiming to become a professional Frontend Developer with expertise in building intuitive, responsive, and performance-optimized user interfaces.</p>
 		</section>
 		<!-- Education -->
 		<section id="education" class="section">
-		    <h2>Education</h2>
+		    <h2 data-translate="education">Education</h2>
 		    <div class="timeline-item">
 		        <div>
 		            <h3>2022-2026</h3>
 		            <div class="badge">GPA 7/10</div>
 		        </div>
 		        <div>
-		            <h4>BSc Computer Science, Japanese Enhancement Programme</h4>
-		            <p>University of Technology, VNU‑HCM</p>
+		            <h4 data-translate="major">BSc Computer Science, Japanese Enhancement Programme</h4>
+		            <p data-translate="university">University of Technology, VNU‑HCM</p>
 		            <div class="courses-list">
-		                <h5>Relevant Courses:</h5>
+		                <h5 data-translate="course">Relevant Courses:</h5>
 		                <ul>
-		                    <li>Software Engineering</li>
-		                    <li>Web Programming</li>
-		                    <li>Software Engineering Capstone Project</li>
+		                    <li data-translate="softwareEngineering">Software Engineering</li>
+		                    <li data-translate="webProgramming">Web Programming</li>
+		                    <li data-translate="softwareEngineeringCapstoneProject">Software Engineering Capstone Project</li>
 		                </ul>
 		            </div>
 		        </div>
@@ -73,10 +80,10 @@
 
 		<!-- Technical Skills -->
 		<section id="skills" class="section">
-		    <h2>Technical Skills</h2>
+		    <h2 data-translate="technicalSkills">Technical Skills</h2>
 		    <div class="skills-grid">
 		        <div class="skill-category">
-		            <h4>Languages</h4>
+		            <h4 data-translate="languages">Languages</h4>
 		            <div class="skill-items">
 		                <span class="skill-badge">JavaScript (ES6+)</span>
 		                <span class="skill-badge">HTML5</span>
@@ -86,7 +93,7 @@
 		        </div>
 
 		        <div class="skill-category">
-		            <h4>Frameworks/Libraries</h4>
+		            <h4 data-translate="frameworks">Frameworks/Libraries</h4>
 		            <div class="skill-items">
 		            	<span class="skill-badge">jQuery</span>
 		                <span class="skill-badge">Bootstrap</span>
@@ -95,7 +102,7 @@
 		        </div>
 
 		        <div class="skill-category">
-		            <h4>Tools</h4>
+		            <h4 data-translate="tools">Tools</h4>
 		            <div class="skill-items">
 		                <span class="skill-badge">Git</span>
 		                <span class="skill-badge">GitHub</span>
@@ -108,7 +115,7 @@
 		        </div>
 
 		        <div class="skill-category">
-		            <h4>Other</h4>
+		            <h4 data-translate="other">Other</h4>
 		            <div class="skill-items">
 		                <span class="skill-badge">Responsive Design</span>
 		                <span class="skill-badge">REST APIs</span>
@@ -120,21 +127,21 @@
 
             <!-- Projects -->
 			<section id="projects" class="section">
-			    <h2>Projects</h2>
+			    <h2 data-translate="projects">Projects</h2>
 			    <div class="project-grid">
 			        <!-- Academic Management System -->
 			        <article class="project-card">
 			            <div class="project-header">
-			                <h3>Academic Management System - HCMUT</h3>
+			                <h3 data-translate="project1st">Academic Management System - HCMUT</h3>
 			                <div class="project-date">03/2024 - 05/2024</div>
 			            </div>
 			            <div class="badge">HTML • CSS • Bootstrap • Git • Python</div>
 			            <ul class="project-details">
-			                <li>Developed comprehensive UI including homepage with navigation bar, background, and footer</li>
-			                <li>Implemented student/instructor management features</li>
-			                <li>Enhanced skills in responsive design and Git workflow</li>
+			                <li data-translate="project11">Developed comprehensive UI including homepage with navigation bar, background, and footer</li>
+			                <li data-translate="project12">Implemented student/instructor management features</li>
+			                <li data-translate="project13">Enhanced skills in responsive design and Git workflow</li>
 			            </ul>
-			            <a href="https://github.com/QuocThinh73/Academic_management_web_app.git" class="icon-link">
+			            <a href="https://github.com/QuocThinh73/Academic_management_web_app.git" class="icon-link" data-translate="viewOnGithub">
 			                View on GitHub →
 			            </a>
 			        </article>
@@ -142,16 +149,16 @@
 			        <!-- Smart Printing Service -->
 			        <article class="project-card">
 			            <div class="project-header">
-			                <h3>Smart Printing Service System - HCMUT</h3>
+			                <h3 data-translate="project2nd">Smart Printing Service System - HCMUT</h3>
 			                <div class="project-date">08/2024 - 12/2024</div>
 			            </div>
 			            <div class="badge">MongoDB • Node.js • REST API • Agile</div>
 			            <ul class="project-details">
-			                <li>Designed main UI framework and authentication system</li>
-			                <li>Integrated MongoDB database and third-party APIs</li>
-			                <li>Implemented Waterfall and Agile methodologies</li>
+			                <li data-translate="project21">Designed main UI framework and authentication system</li>
+			                <li data-translate="project22">Integrated MongoDB database and third-party APIs</li>
+			                <li data-translate="project23">Implemented Waterfall and Agile methodologies</li>
 			            </ul>
-			            <a href="https://github.com/MinaNguyen17/BTL-CNPM.git" class="icon-link">
+			            <a href="https://github.com/MinaNguyen17/BTL-CNPM.git" class="icon-link" data-translate="viewOnGithub">
 			                View on GitHub →
 			            </a>
 			        </article>
@@ -159,16 +166,16 @@
 			        <!-- Soccer Field Booking -->
 			        <article class="project-card">
 			            <div class="project-header">
-			                <h3>Online Soccer Field Booking Platform</h3>
+			                <h3 data-translate="project3rd">Online Soccer Field Booking Platform</h3>
 			                <div class="project-date">08/2024 - 01/2025</div>
 			            </div>
-			            <div class="badge">Full-stack • Team Leadership • Video Editing</div>
+			            <div class="badge" data-translate="project3Link">Full-stack • Team Leadership • Video Editing</div>
 			            <ul class="project-details">
-			                <li>Led development team and designed module architecture</li>
-			                <li>Implemented full-cycle development from UI to deployment</li>
-			                <li>Created professional demo videos for project reports</li>
+			                <li data-translate="project31">Led development team and designed module architecture</li>
+			                <li data-translate="project32">Implemented full-cycle development from UI to deployment</li>
+			                <li data-translate="project33">Created professional demo videos for project reports</li>
 			            </ul>
-			            <a href="https://github.com/diepvuminh123/Soccer-field-booking-application.git" class="icon-link">
+			            <a href="https://github.com/diepvuminh123/Soccer-field-booking-application.git" class="icon-link" data-translate="viewOnGithub">
 			                View on GitHub →
 			            </a>
 			        </article>
@@ -177,7 +184,7 @@
 
 			<!-- Certifications -->
 			<section id="certifications" class="section">
-			    <h2>Certifications</h2>
+			    <h2 data-translate="certifications">Certifications</h2>
 			    
 			    <!-- JLPT N3 -->
 			    <div class="certification-item">
@@ -185,7 +192,7 @@
 			            <h3>JLPT N3 (01/2025)</h3>
 			            <a href="https://drive.google.com/file/d/1bFTpTmH95CbmTktZCcqPDOmtAJRFHeyy/view?usp=sharing" 
 			               class="verify-link"
-			               target="_blank">
+			               target="_blank" data-translate="verify">
 			               Verify ↗
 			            </a>
 			        </div>
@@ -197,7 +204,7 @@
 			            <h3>Advanced C++</h3>
 			            <a href="https://codelearn.io/share/f7b816b0-413a-4ee8-998d-1b6594444e1b" 
 			               class="verify-link"
-			               target="_blank">
+			               target="_blank" data-translate="verify">
 			               Verify ↗
 			            </a>
 			        </div>
@@ -209,7 +216,7 @@
 			            <h3>Object Oriented-Programming in C++</h3>
 			            <a href="https://codelearn.io/en/share/a74d45a3-b938-4c71-b3fb-610cc8989383" 
 			               class="verify-link"
-			               target="_blank">
+			               target="_blank" data-translate="verify">
 			               Verify ↗
 			            </a>
 			        </div>
@@ -218,31 +225,31 @@
 
 			<!-- Activities & Interests -->
             <section id="activities" class="section">
-			    <h2>Activities & Interests</h2>
+			    <h2 data-translate="activities">Activities & Interests</h2>
 			    
 			    <!-- Volunteer Activities -->
 			    <div class="timeline-item">
 			        <div>2023</div>
 			        <div>
-			            <h3>Volunteer Activities</h3>
+			            <h3 data-translate="activity1st">Volunteer Activities</h3>
 			            <div class="project-links">
-			                <a href="https://www.facebook.com/DoankhoiOISP/posts/pfbid0hfM3NG1VzvEveBpjdJ3BG3TTtK7LsTbSUKNySypHxmP8FBvaZyhoxwwF6hGHLaPSl" class="icon-link">Facebook Post</a>
-			                <a href="https://www.baodongthap.vn/xa-hoi/net-dep-“mua-he-xanh”-115384.aspx" class="icon-link">News Article</a>
+			                <a href="https://www.facebook.com/DoankhoiOISP/posts/pfbid0hfM3NG1VzvEveBpjdJ3BG3TTtK7LsTbSUKNySypHxmP8FBvaZyhoxwwF6hGHLaPSl" class="icon-link" data-translate="activity1Link1">Facebook Post</a>
+			                <a href="https://www.baodongthap.vn/xa-hoi/net-dep-“mua-he-xanh”-115384.aspx" class="icon-link" data-translate="activity1Link2">News Article</a>
 			            </div>
 			            <ul>
-			                <li>Green Summer Campaign Volunteer - OISP in Tan Hong, Dong Thap (06/2023 - 07/2023)</li>
-			                <li>"Run for the Community" Volunteer - Ho Chi Minh City University of Technology</li>
+			                <li data-translate="activity11">Green Summer Campaign Volunteer - OISP in Tan Hong, Dong Thap (06/2023 - 07/2023)</li>
+			                <li data-translate="activity12">"Run for the Community" Volunteer - Ho Chi Minh City University of Technology</li>
 			            </ul>
 			        </div>
 			    </div>
 
 			    <!-- Sports & Fitness -->
 			    <div class="timeline-item">
-			        <div>2022-Present</div>
+			        <div data-translate="activity2Time">2022-Present</div>
 			        <div>
-			            <h3>Sports & Fitness</h3>
+			            <h3 data-translate="activity2nd">Sports & Fitness</h3>
 			            <ul>
-			                <li>Aikido: Achieved Kyu 4 rank</li>
+			                <li data-translate="activity21">Aikido: Achieved Kyu 4 rank</li>
 			            </ul>
 			        </div>
 			    </div>
@@ -251,18 +258,200 @@
 			    <div class="timeline-item">
 			        <div>2023</div>
 			        <div>
-			            <h3>Creative Skills</h3>
+			            <h3 data-translate="activity3rd">Creative Skills</h3>
 			            <div class="project-links">
-			                <a href="https://youtu.be/OskDh3xgolU" class="icon-link">Personal Project</a>
-			                <a href="https://youtu.be/e3cbalBvmrE" class="icon-link">Group Project</a>
+			                <a href="https://youtu.be/OskDh3xgolU" class="icon-link" data-translate="activity3Link1">Personal Project</a>
+			                <a href="https://youtu.be/e3cbalBvmrE" class="icon-link" data-translate="activity3Link2">Group Project</a>
 			            </div>
 			            <ul>
-			                <li>Video Editing: Engaged in personal projects and content creation</li>
+			                <li data-translate="activity31">Video Editing: Engaged in personal projects and content creation</li>
 			            </ul>
 			        </div>
 			    </div>
 			</section>
         </div>
     </main>
+	<script>
+	const translations = {
+	    en: {
+			title: "Quoc Loc Nguyen - Portfolio",
+	    	fullName: "Quoc Loc Nguyen",
+	    	computerScienceStudent: "Computer Science Student",
+	    	contact: "Contact",
+	        education: "Education",
+	        technicalSkills: "Technical Skills",
+	        projects: "Projects",
+	        certifications: "Certifications",
+	        activities: "Activities & Interests",
+	        summary: "Summary",
+	        textSummary: "Third-year Computer Science student with hands-on experience in Frontend development across multiple real-world projects. Possesses in-depth knowledge of HTML, CSS, JavaScript, and modern frameworks. Aiming to become a professional Frontend Developer with expertise in building intuitive, responsive, and performance-optimized user interfaces.",
+			major: "BSc Computer Science, Japanese Enhancement Programme",	
+			university: "University of Technology, VNU‑HCM",      
+			course: "Relevant Courses:",
+			softwareEngineering: "Software Engineering",
+			webProgramming: "Web Programming",
+			softwareEngineeringCapstoneProject: "Software Engineering Capstone Project",
+			languages: "Languages",
+			frameworks: "Frameworks/Libraries",
+			tools: "Tools",
+			other: "Other",
+			project1st: "Academic Management System - HCMUT", // by timeline
+			project11: "Developed comprehensive UI including homepage with navigation bar, background, and footer",
+			project12: "Implemented student/instructor management features",
+			project13: "Enhanced skills in responsive design and Git workflow",
+			project2nd: "Smart Printing Service System - HCMUT",
+			project21: "Designed main UI framework and authentication system",
+			project22: "Integrated MongoDB database and third-party APIs",
+			project23: "Implemented Waterfall and Agile methodologies",
+			project3rd: "Online Soccer Field Booking Platform",
+			project3Tech: "Full-stack • Team Leadership • Video Editing",
+			project31: "Led development team and designed module architecture",
+			project32: "Implemented full-cycle development from UI to deployment",
+			project33: "Created professional demo videos for project reports",
+			viewOnGithub: "View on Github →",
+			verify: "Verify ↗",
+			activity1st: "Volunteer Activities",
+			activity1Link1: "Facebook Post",
+			activity1Link2: "News Article",
+			activity11: "Green Summer Campaign Volunteer - OISP in Tan Hong, Dong Thap (06/2023 - 07/2023)",
+			activity12: "\"Run for the Community\" Volunteer - Ho Chi Minh City University of Technology",
+			activity2nd: "Sports & Fitness",
+			activity2Time: "2022-Present",
+			activity21: "Aikido: Achieved Kyu 4 rank",
+			activity3rd: "Creative Skills",
+			activity3Link1: "Personal Project",
+			activity3Link2: "Group Project",
+			activity31: "Video Editing: Engaged in personal projects and content creation",
+	    },
+	    vi: {
+			title: "Quoc Loc Nguyen - Portfolio",
+	    	fullName: "Nguyễn Quốc Lộc",
+	    	computerScienceStudent: "Sinh viên Khoa học Máy tính",
+	    	contact: "Liên hệ",
+	        education: "Học vấn",
+	        technicalSkills: "Kỹ năng Kỹ thuật",
+	        projects: "Dự án",
+	        certifications: "Chứng chỉ",
+	        activities: "Hoạt động và đam mê",
+	        summary: "Tổng quan",
+	        textSummary: "Sinh viên năm ba Khoa học Máy tính với kinh nghiệm Frontend qua nhiều dự án tại trường. Thành thạo HTML, CSS, JavaScript và các framework hiện đại, tập trung vào UI/UX responsive và tối ưu hiệu suất.",
+			major: "Cử nhân ngành Khoa học Máy tính, chương trình định hướng Nhật Bản",	
+			university: "Trường Đại học Bách khoa - Đại học Quốc gia TP.HCM",      
+			course: "Khóa học liên quan:",
+			softwareEngineering: "Công nghệ phần mềm",
+			webProgramming: "Lập trình Web",
+			softwareEngineeringCapstoneProject: "Đồ án Tổng hợp Công nghệ Phần mềm",
+			languages: "Ngôn ngữ Lập trình",
+			frameworks: "Framework/Thư viện",
+			tools: "Công cụ",
+			other: "Khác",
+			project1st: "Hệ thống Quản lý Học thuật - HCMUT", // by timeline
+			project11: "Phát triển giao diện người dùng toàn diện bao gồm trang chủ với thanh điều hướng, nền và chân trang.",
+			project12: "Triển khai các tính năng quản lý sinh viên và giảng viên.",
+			project13: "Nâng cao kỹ năng trong thiết kế đáp ứng và quy trình làm việc với Git.",
+			project2nd: "Hệ thống Dịch vụ In Ấn Thông minh - HCMUT",
+			project21: "Thiết kế khung giao diện người dùng chính và hệ thống xác thực.",
+			project22: "Tích hợp cơ sở dữ liệu MongoDB và các API bên thứ ba.",
+			project23: "Áp dụng các phương pháp Waterfall và Agile.",
+			project3rd: "Nền tảng Đặt sân bóng đá trực tuyến tại TP.HCM",
+			project3Tech: "Full-stack • Team Leadership • Video Editing",
+			project31: "Dẫn dắt nhóm phát triển và thiết kế kiến trúc module.",
+			project32: "Thực hiện phát triển toàn chu kỳ từ giao diện người dùng đến triển khai.",
+			project33: "Tạo video demo chuyên nghiệp cho báo cáo dự án.",
+			viewOnGithub: "Xem thêm Github →",
+			verify: "Xác thực ↗",
+			activity1st: "Hoạt động tình nguyện",
+			activity1Link1: "Bài Post Facebook",
+			activity1Link2: "Bài Post Báo",
+			activity11: "Chiến sĩ Mùa hè Xanh - OISP tại Tân Hồng, Đồng Tháp (06/2023 - 07/2023)",
+			activity12: "Tình nguyện viên \"Chạy vì Cộng đồng\" - Đại học Bách Khoa",
+			activity2nd: "Thể thao \& Sức khỏe",
+			activity2Time: "2022 - Hiện tại",
+			activity21: "Aikido: Đạt cấp độ Kyu 4",
+			activity3rd: "Kỹ năng Sáng tạo",
+			activity3Link1: "Dự án cá nhân",
+			activity3Link2: "Dự án lớn",
+			activity31: "Biên tập Video: Thực hiện các dự án cá nhân và sáng tạo nội dung",
+	    },
+	    ja: {
+	        fullName: "グエン・コック・ロック",
+	    	computerScienceStudent: "コンピュータサイエンスの学生",
+	    	contact: "連絡",
+	        education: "学歴",
+	        skills: "技術スキル",
+	        projects: "プロジェクト",
+	        certifications: "資格",
+	        activities: "課外活動と趣味",
+	        summary: "概要",
+	        textSummary: "コンピュータサイエンスを専攻する3年生で、複数の実践プロジェクトを通じてフロントエンド開発の経験を積んでいます。HTML、CSS、JavaScript、および最新のフレームワークに精通しており、レスポンシブなUI/UXとパフォーマンスの最適化に注力しています。",
+			major: "コンピュータサイエンス学士、日本語強化プログラム",	
+			university: "ホーチミン市工科大学",      
+			course: "関連科目:",
+			softwareEngineering: "ソフトウェア工学",
+			webProgramming: "ウェブプログラミング",
+			softwareEngineeringCapstoneProject: "ソフトウェア工学キャップストーンプロジェクト",
+			languages: "言語",
+			frameworks: "フレームワーク/ライブラリ",
+			tools: "ツール",
+			other: "その他",
+			project1st: "Academic Management System - HCMUT", // by timeline
+			project11: "ナビゲーションバー、背景、フッターを含むホームページなどの包括的なUIを開発しました。",
+			project12: "学生/講師管理機能を実装しました。",
+			project13: "レスポンシブデザインとGitワークフローのスキルを向上させました。",
+			project2nd: "Smart Printing Service System - HCMUT",
+			project21: "主要なUIフレームワークと認証システムを設計しました。",
+			project22: "MongoDBデータベースとサードパーティAPIを統合しました。",
+			project23: "ウォーターフォールとアジャイルの方法論を実装しました。",
+			project3rd: "ホーチミン市オンラインサッカー場予約プラットフォーム",
+			project3Tech: "フルスタック • チームリーダーシップ • ビデオ編集",
+			project31: "開発チームを率い、モジュールアーキテクチャを設計しました。",
+			project32: "UIからデプロイメントまでのフルサイクル開発を実装しました。",
+			project33: "プロジェクトレポート用のプロフェッショナルなデモビデオを作成しました。",
+			viewOnGithub: "Githubで表示 →",
+			verify: "確認 ↗",
+			activity1st: "ボランティア活動",
+			activity1Link1: "Facebookの投稿",
+			activity1Link2: "ニュース記事",
+			activity11: "グリーンサマーキャンペーンボランティア - OISPドンタップ省タンホン地区 (2023年6月 - 2023年7月)",
+			activity12: "「コミュニティのための走り」ボランティア - ホーチミン市工科大学",
+			activity2nd: "スポーツ・フィットネス",
+			activity2Time: "2022年 - 現在",
+			activity21: "合気道: 4級を達成",
+			activity3rd: "クリエイティブスキル",
+			activity3Link1: "個人プロジェクト",
+			activity3Link2: "グループプロジェクト",
+			activity31: "ビデオ編集: 個人プロジェクトやコンテンツ制作に従事"
+	    }
+	};
+
+	const languageSelect = document.getElementById('language-select');
+	const html = document.documentElement;
+
+	// Load saved language
+	const savedLang = localStorage.getItem('lang') || 'en';
+	html.lang = savedLang;
+	languageSelect.value = savedLang;
+
+	// Language change handler
+	languageSelect.addEventListener('change', (e) => {
+	    const lang = e.target.value;
+	    html.lang = lang;
+	    localStorage.setItem('lang', lang);
+	    updateTextContent(lang);
+	});
+
+	function updateTextContent(lang) {
+	    // Update all translatable elements
+	    Object.keys(translations[lang]).forEach(key => {
+	        const elements = document.querySelectorAll(`[data-translate="${key}"]`);
+	        elements.forEach(element => {
+	            element.textContent = translations[lang][key];
+	        });
+	    });
+	}
+
+	// Initial update
+	updateTextContent(savedLang);
+	</script>
 </body>
 </html>
